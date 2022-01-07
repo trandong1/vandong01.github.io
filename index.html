@@ -9,6 +9,8 @@
             Hay Nhất
         </title>
         <link rel="stylesheet" href="style.css" />
+         <link rel="stylesheet" href="responsive.css" />
+
         <link
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
             rel="stylesheet"
@@ -26,117 +28,127 @@
     <body>
         <div class="main">
             <div class="header">
-                <header class="header__navbar">
-                    <img
-                        src="https://phimchill.tv/dev/images/logo.png"
-                        alt="phimchill"
-                        class="header__img"
-                    />
-                </header>
-                <div class="header__navbar-menu">
-                    <ul class="header__navbar-list">
-                        <li class="header__navbar-item">
-                            <a href="/" class="header__navbar-link">PHIMMOI</a>
-                        </li>
-                        <li class="header__navbar-item">
-                            <a href="/phimle.html" class="header__navbar-link"
-                                >PHIM LẺ</a
-                            >
-                        </li>
-                        <li class="header__navbar-item">
-                            <a href="" class="header__navbar-link">PHIM BỘ</a>
-                        </li>
-                        <li class="header__navbar-item">
-                            THỂ LOẠI
-                            <ul class="subnav">
-                                <li><a href="">Phim hành động</a></li>
-                                <li><a href="#">Phim Võ thuật</a></li>
-                                <li><a href="#">Phim Tình Cảm</a></li>
-                                <li><a href="#">Phim Hoạt Hình</a></li>
-                                <li><a href="#">Phim Hài Hước</a></li>
-                                <li><a href="#">Phim Viễn Tưởng</a></li>
-                                <li><a href="#">Phim Cổ Trang</a></li>
-                                <li><a href="#">Phim Phiêu Lưu</a></li>
-                                <li><a href="#">Phim Tâm Lý</a></li>
-                                <li><a href="#">Phim Khoa Học</a></li>
-                                <li><a href="#">Phim Hình Sự</a></li>
-                                <li><a href="#">Phim Ma - Kinh Dị</a></li>
-                                <li><a href="#">Phim Chiến Tranh</a></li>
-                                <li><a href="#">Phim Âm Nhạc</a></li>
-                                <li><a href="#">Phim Thể Thao</a></li>
-                                <li><a href="#">Phim Thần Thoại</a></li>
-                                <li><a href="#">Game Show</a></li>
-                                <li><a href="#">Phim Truyền Hình</a></li>
-                                <li><a href="#">Phim Chiếu Rạp</a></li>
-                                <li><a href="#">Phim Anime</a></li>
-                                <li><a href="#">Phim Sắp Chiếu</a></li>
-                                <li><a href="#">Phim Thuyết Minh</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__navbar-item">
-                            QUỐC GIA
-                            <ul class="subnav">
-                                <li><a href="#">Phim Trung Quốc</a></li>
-                                <li><a href="#">Phim Hàn Quốc</a></li>
-                                <li><a href="#">Phim Nhật Bản</a></li>
-                                <li><a href="#">Phim Âu Mỹ</a></li>
-                                <li><a href="#">Phim Thái Lan</a></li>
-                                <li><a href="#">Phim Đài Loan</a></li>
-                                <li><a href="#">Phim Tổng Hợp</a></li>
-                                <li><a href="#">Phim Hồng Kông</a></li>
-                                <li><a href="#">Phim Ấn Độ</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__navbar-item">
-                            NĂM PHÁT HÀNH
-                            <ul class="subnav">
-                                <li><a href="#">Phim 2021</a></li>
-                                <li><a href="#">Phim 2020</a></li>
-                                <li><a href="#">Phim 2019</a></li>
-                                <li><a href="#">Phim 2018</a></li>
-                                <li><a href="#">Phim 2017</a></li>
-                                <li><a href="#">Phim 2016</a></li>
-                                <li><a href="#">Phim 2015</a></li>
-                                <li><a href="#">Phim 2014</a></li>
-                                <li><a href="#">Phim 2013</a></li>
-                                <li><a href="#">Phim 2012</a></li>
-                                <li><a href="#">Phim 2011</a></li>
-                                <li><a href="#">Phim 2010</a></li>
-                                <li><a href="#">Phim 2009</a></li>
-                                <li><a href="#">Phim 2008</a></li>
-                                <li><a href="#">Phim 2007</a></li>
-                                <li><a href="#">Phim trước 2007</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__navbar-item">
-                            <a href="" class="header__navbar-link"
-                                >PHIM CHIẾU RẠP</a
-                            >
-                        </li>
-                        <li class="header__navbar-item">
-                            <a href="" class="header__navbar-link">TRAILER</a>
-                        </li>
-                        <li class="header__navbar-item active">
-                            TOP PHIM
-                            <ul class="subnav">
-                                <li><a href="#">Top IMDB</a></li>
-                                <li><a href="#">Phim Hot</a></li>
-                                <li><a href="#">Phim Netflix</a></li>
-                                <li><a href="#">Phim DC Comic</a></li>
-                                <li><a href="#">Phim Marvel</a></li>
-                                <li><a href="#">Phim HD</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="header__navbar-search">
-                    <div class="header__navbar-search--wrapper">
-                        <input
-                            type="text"
-                            placeholder="Tìm tên phim, diễn viên..."
-                            class="header__navbar-search--input"
+                <div class="header__wrapper">
+                    <header class="header__navbar">
+                        <img
+                            src="https://phimchill.tv/dev/images/logo.png"
+                            alt="phimchill"
+                            class="header__img"
                         />
-                        <i class="fas fa-search header__navbar-icon"></i>
+                    </header>
+                    <div class="header__navbar-menu">
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item">
+                                <a href="/" class="header__navbar-link"
+                                    >PHIMMOI</a
+                                >
+                            </li>
+                            <li class="header__navbar-item">
+                                <a
+                                    href="/phimle.html"
+                                    class="header__navbar-link"
+                                    >PHIM LẺ</a
+                                >
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-link"
+                                    >PHIM BỘ</a
+                                >
+                            </li>
+                            <li class="header__navbar-item">
+                                THỂ LOẠI
+                                <ul class="subnav">
+                                    <li><a href="">Phim hành động</a></li>
+                                    <li><a href="#">Phim Võ thuật</a></li>
+                                    <li><a href="#">Phim Tình Cảm</a></li>
+                                    <li><a href="#">Phim Hoạt Hình</a></li>
+                                    <li><a href="#">Phim Hài Hước</a></li>
+                                    <li><a href="#">Phim Viễn Tưởng</a></li>
+                                    <li><a href="#">Phim Cổ Trang</a></li>
+                                    <li><a href="#">Phim Phiêu Lưu</a></li>
+                                    <li><a href="#">Phim Tâm Lý</a></li>
+                                    <li><a href="#">Phim Khoa Học</a></li>
+                                    <li><a href="#">Phim Hình Sự</a></li>
+                                    <li><a href="#">Phim Ma - Kinh Dị</a></li>
+                                    <li><a href="#">Phim Chiến Tranh</a></li>
+                                    <li><a href="#">Phim Âm Nhạc</a></li>
+                                    <li><a href="#">Phim Thể Thao</a></li>
+                                    <li><a href="#">Phim Thần Thoại</a></li>
+                                    <li><a href="#">Game Show</a></li>
+                                    <li><a href="#">Phim Truyền Hình</a></li>
+                                    <li><a href="#">Phim Chiếu Rạp</a></li>
+                                    <li><a href="#">Phim Anime</a></li>
+                                    <li><a href="#">Phim Sắp Chiếu</a></li>
+                                    <li><a href="#">Phim Thuyết Minh</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__navbar-item">
+                                QUỐC GIA
+                                <ul class="subnav">
+                                    <li><a href="#">Phim Trung Quốc</a></li>
+                                    <li><a href="#">Phim Hàn Quốc</a></li>
+                                    <li><a href="#">Phim Nhật Bản</a></li>
+                                    <li><a href="#">Phim Âu Mỹ</a></li>
+                                    <li><a href="#">Phim Thái Lan</a></li>
+                                    <li><a href="#">Phim Đài Loan</a></li>
+                                    <li><a href="#">Phim Tổng Hợp</a></li>
+                                    <li><a href="#">Phim Hồng Kông</a></li>
+                                    <li><a href="#">Phim Ấn Độ</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__navbar-item">
+                                NĂM PHÁT HÀNH
+                                <ul class="subnav">
+                                    <li><a href="#">Phim 2021</a></li>
+                                    <li><a href="#">Phim 2020</a></li>
+                                    <li><a href="#">Phim 2019</a></li>
+                                    <li><a href="#">Phim 2018</a></li>
+                                    <li><a href="#">Phim 2017</a></li>
+                                    <li><a href="#">Phim 2016</a></li>
+                                    <li><a href="#">Phim 2015</a></li>
+                                    <li><a href="#">Phim 2014</a></li>
+                                    <li><a href="#">Phim 2013</a></li>
+                                    <li><a href="#">Phim 2012</a></li>
+                                    <li><a href="#">Phim 2011</a></li>
+                                    <li><a href="#">Phim 2010</a></li>
+                                    <li><a href="#">Phim 2009</a></li>
+                                    <li><a href="#">Phim 2008</a></li>
+                                    <li><a href="#">Phim 2007</a></li>
+                                    <li><a href="#">Phim trước 2007</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-link"
+                                    >PHIM CHIẾU RẠP</a
+                                >
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-link"
+                                    >TRAILER</a
+                                >
+                            </li>
+                            <li class="header__navbar-item active">
+                                TOP PHIM
+                                <ul class="subnav">
+                                    <li><a href="#">Top IMDB</a></li>
+                                    <li><a href="#">Phim Hot</a></li>
+                                    <li><a href="#">Phim Netflix</a></li>
+                                    <li><a href="#">Phim DC Comic</a></li>
+                                    <li><a href="#">Phim Marvel</a></li>
+                                    <li><a href="#">Phim HD</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__navbar-search">
+                        <div class="header__navbar-search--wrapper">
+                            <input
+                                type="text"
+                                placeholder="Tìm tên phim, diễn viên..."
+                                class="header__navbar-search--input"
+                            />
+                            <i class="fas fa-search header__navbar-icon"></i>
+                        </div>
                     </div>
                 </div>
             </div>
