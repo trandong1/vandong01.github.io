@@ -1,0 +1,35 @@
+@media (min-width: 1600px) {
+    .header {
+        padding: 5px 216px;
+    }
+    .container__wrapper {
+        padding: 40px 263px;
+    }
+    .slide__content-wrapper {
+        margin-right: 10px;
+    }
+    .slide__icon.left {
+        left: 280px;
+        z-index: 3;
+    }
+    .slide__icon.right {
+        right: 280px;
+    }
+    .footer__wrapper {
+        padding: 0px 290px;
+    }
+    .container__wrapper.phimle {
+        padding: 25px 285px;
+    }
+    .home {
+        padding: 0 276px;
+    }
+    .container__title {
+        padding: 20px 10px;
+    }
+}
+@media (max-width: 480px) {
+    .header__navbar-menu {
+        display: none;
+    }
+}
